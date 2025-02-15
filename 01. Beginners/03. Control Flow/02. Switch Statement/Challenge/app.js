@@ -1,18 +1,21 @@
-// 1. Create variable name (password) store nothing.
-// 2. If password is equal to 8 print "Welcome"
-// 3. If password is less then or equal to 8 print "Password is too short"
-// 4. If password is greater then or equal to 8 print "Too Long Password" & "Password should be 8 characters"
-// 5. If all fails print "Please provide a password."
+// 1. Create variable name (fruit) & store "banana".
+// 2. If case is "Banana" print "Banana is good!"
+// 3. If case is "Orange" print "I am not a fan of orange."
+// 4. If case is "Apple" print "How you like them apples?"
+// 5. default "I  have never heard of that fruit."
 
-let password;
+let fruits = "Banana";
 
-if (password === 8) {
-  console.log("Welcome");
-} else if (password <= 8) {
-  console.log("Password is too short");
-} else if (password >= 8) {
-  console.log("Too long password");
-  console.log("Password should be 8 characters");
-} else {
-  console.log("Please provide a password");
+switch (fruits) {
+  case "Banana":
+    console.log("Banana is good!");
+    break;
+  case "Orange":
+    console.log("I am not a fan of orange.");
+    break;
+  case "Apple":
+    console.log("How you like them apples?");
+    break;
+  default:
+    console.log("I have never heard of that fruit...");
 }

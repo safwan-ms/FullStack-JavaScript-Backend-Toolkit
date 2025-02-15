@@ -1,40 +1,53 @@
-// if (condition) {...}
-// else if (condition_2) {...}
-// else {...}
-// ------------------------
+// switch(expression) {
+//   case x:
+//     // code block
+//     break;
+//   case y:
+//     // code block
+//     break;
+//   default:
+//     // code block
+// }
 
-let a = 10,
-  b = 20;
-if (a > b) {
-  console.log("a is greater than b");
-} else if (a < b) {
-  console.log("a is less than b");
-} else {
-  console.log("a is equal to b");
+let x = "0";
+
+switch (x) {
+  case 0:
+    text = "Off";
+    break;
+  case 1:
+    text = "On";
+    break;
+  default:
+    text = "No value found";
 }
 
-// ------------------------
+// -------------------------------------------------
 
-if (time < 10) {
-  greeting = "Good morning";
-} else if (time < 20) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
+let day = "monday";
+
+switch (day) {
+  case "monday":
+    console.log("Today is monday");
+    break;
+  case "tuesday":
+    console.log("Today is tuesday");
+    break;
+  case "wednesday":
+    console.log("Today is wednesday");
+    break;
+  case "tuesday":
+    console.log("Today is thursday");
+    break;
+  case "friday":
+    console.log("Today is friday");
+    break;
+  case "saturday":
+    console.log("Today is saturday");
+    break;
+  case "sunday":
+    console.log("Today is sunday");
+    break;
+  default:
+    console.log("Don't know what day is today!");
 }
-// ------------------------
-
-// ------------------------
-let password;
-
-if (password === 8) {
-  console.log("Welcome");
-} else if (password <= 8) {
-  console.log("Password is too short");
-} else if (password >= 8) {
-  console.log("Too long password");
-  console.log("Password should be 8 characters");
-} else {
-  console.log("Please provide a password");
-}
-// -----------------------------
