@@ -4,6 +4,6 @@
 let i = 20;
 
 do {
-  console.log("HuXn WebDev");
+  console.log("Safwax WebDev");
   i++;
 } while (i <= 400);
