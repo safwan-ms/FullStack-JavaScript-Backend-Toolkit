@@ -25,7 +25,7 @@ console.log(!a); // false
 console.log(!b); // true
 
 // -----------------------------------
-let password = "huxn-webdev";
+let password = "safwax-webdev";
 
 if (password.length >= 8 && password.includes("web")) {
   console.log("VALID PASSWORD");
