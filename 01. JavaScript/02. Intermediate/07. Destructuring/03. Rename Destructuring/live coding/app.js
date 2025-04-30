@@ -10,8 +10,8 @@ console.log(new2); //200
 // --------------------------
 // Assignment without declaration
 let name, division;
-({ name, division } = { name: "HuXn", division: "First" });
-console.log(name); // HuXn
+({ name, division } = { name: "safwax", division: "First" });
+console.log(name); // safwax
 console.log(division); // First
 // --------------------------
 
