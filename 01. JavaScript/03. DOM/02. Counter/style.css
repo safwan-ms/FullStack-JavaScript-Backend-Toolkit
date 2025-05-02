@@ -1,0 +1,30 @@
+
+body{
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    color: white;
+}
+
+#counterDisplay{
+    font-size: 4rem;
+}
+#counterControl button{
+    padding:  7px 14px;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 3rem;
+}
+#counterAdd{
+    background-color: rgb(240, 118, 5);
+}
+#counterSub{
+    background-color: rgb(202, 1, 125);
+
+}
