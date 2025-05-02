@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #312727;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            align-items: center;
+        }
+
+        h1 {
+            color: whitesmoke;
+        }
+
+        button {
+            background: transparent;
+            margin-top: 120px;
+            padding: 12.5px 25px;
+            margin-left: -150px;
+            font-size: 1rem;
+            /* background-color: rgb(146, 236, 28); */
+            border: 4px solid rgb(146, 236, 28);
+            position: relative;
+            color: rgb(146, 236, 28);
+            font-weight: 1000;
+        }
+
+        button::before {
+            content: "";
+            height: 0%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: 0.7s;
+            background-color: rgb(146, 236, 28);
+            z-index: -1;
+            position: absolute;
+        }
+
+        button:hover::before {
+            top: unset;
+            bottom: 0;
+            height: 100%;
+        }
+
+        button:hover {
+            color: white;
+
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+    <div class="container">
+        <h1>Hello <span>World</span></h1>
+        <button>Say Hi</button>
+    </div>
+    <script>
+        const spanElement = document.querySelector("span");
+        const button = document.querySelector('button');
+
+        button.addEventListener("click", () => {
+            const yourName = prompt("Enter Your Name:");
+            spanElement.innerHTML = yourName
+            if (yourName == '') {
+                spanElement.innerHTML = 'World'
+
+            }
+        })
+    </script>
+</body>
+
+</html>
