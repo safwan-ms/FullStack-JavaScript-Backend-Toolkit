@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+</head>
+<body>
+    <h1 id="h1">Welcome</h1>
+    <button id="add">addName</button>
+    <button id="clear">clearName</button>
+    <script>
+        const h1 = document.getElementById('h1');
+        const add = document.getElementById('add');
+        const clear = document.getElementById('clear');
+
+        // add.onclick = function(){
+        //     userDetails();
+        // }
+        // const userDetails = () => {
+        //     const name = prompt('Please Enter Your Name');
+        //     localStorage.setItem("userName",name);
+        //     h1.textContent = "Welcome " + name;
+           
+        // }
+        // if(!localStorage.getItem("userName")){
+        //     userDetails();
+        // }
+        // else{
+        //     const name = localStorage.getItem("userName");
+        //     h1.textContent = "Welcome " + name;
+        // }
+       add.onclick = function (){
+        userDetails();
+       }
+
+       const userDetails = () => {
+        const name = prompt("Please Enter Your Name")
+        h1.textContent ="Welcome "+ name
+        localStorage.setItem("user",name);
+
+       }
+       if(!localStorage.getItem("user")){
+        userDetails();
+       }
+       else{
+        const name = localStorage.getItem("user");
+        h1.textContent = "Welcome "+ name;
+       }
+   </script>
+</body>
+</html>
