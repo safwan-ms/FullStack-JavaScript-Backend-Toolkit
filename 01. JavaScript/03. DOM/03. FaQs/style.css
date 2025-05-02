@@ -1,0 +1,14 @@
+summary{
+    padding: 5px;
+}
+details{
+    margin: 10px;
+    background-color: rgb(228, 174, 174);
+    border: 2px solid red;
+    padding-bottom: 0;
+    padding: 30px;
+}
+p{
+    padding-top: 0;
+    padding: 10px;
+}
