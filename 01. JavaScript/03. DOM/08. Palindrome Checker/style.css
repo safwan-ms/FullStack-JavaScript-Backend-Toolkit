@@ -1,0 +1,13 @@
+input{
+    width: 30%;
+    padding: 15px;
+}
+body{
+    background-color: coral;
+}
+button{
+    margin-left: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+}
