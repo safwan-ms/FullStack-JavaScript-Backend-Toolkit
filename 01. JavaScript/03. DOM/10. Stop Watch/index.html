@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Coundown Timer</h1>
+    <main>
+        
+    <div class="inputs">
+        <label for="hoursInput">Hours :</label>
+        <input type="number" id="hoursInput" min="0" value="0">
+
+        <label for="minutesInput">Minutes :</label>
+        <input type="number" id="minutesInput" min="0" value="0">
+
+        <label for="secondsInput">Seconds :</label>
+        <input type="number" id="secondsInput" min="0" value="0">
+        <button id="startTimer">Start</button>
+    </div>
+    <div class="timer">
+        <div id="hoursOutput"></div>
+        <div id="minutesOutput"></div>
+        <div id="secondsOutput"></div>
+    </div>
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
