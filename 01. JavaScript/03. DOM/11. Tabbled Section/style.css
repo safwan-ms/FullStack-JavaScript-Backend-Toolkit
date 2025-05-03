@@ -1,0 +1,28 @@
+main{
+    width: 1000px;
+    margin-left: 140px;
+}
+nav{
+display: flex; 
+margin-left: 140px;
+margin-top: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+nav li{
+    list-style-type: none;
+    padding: .5rem;
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.active{
+    background-color: hsl(17, 92%, 54%);
+    color: white;
+}
+.hidden{
+    display: none;
+}
