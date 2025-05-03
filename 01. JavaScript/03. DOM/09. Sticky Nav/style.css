@@ -1,0 +1,23 @@
+main{
+    display: flex;
+    height: 100vh;
+}
+nav{
+    position: relative;
+}
+nav a{
+    padding: 10px;
+    width: 50px;
+}
+nav ul {
+    width: 100px;
+}
+nav ul li {
+list-style-type: none;
+padding: .9rem;
+}
+nav a.active{
+    background-color: teal;
+    color: white;
+
+}
