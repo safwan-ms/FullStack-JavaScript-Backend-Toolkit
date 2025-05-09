@@ -20,8 +20,8 @@ const john: Person = {
   },
 };
 
-const huxn: Person = {
-  firstName: "HuXn",
+const safwan: Person = {
+  firstName: "safwan",
   lastName: "WebDev",
   age: 18,
   sayHello() {
@@ -30,7 +30,7 @@ const huxn: Person = {
 };
 
 greet(john);
-greet(huxn);
+greet(safwan);
 
 // ----------------------------------
 // Interface #3 (Interface with method properties)

@@ -37,8 +37,8 @@ interface User {
   ): string | number;
 }
 
-const huxn: User = {
-  firstName: "HuXn",
+const safwan: User = {
+  firstName: "safwan",
   lastName: "WebDev",
   age: 18,
   printUserInfo(firstName, lastName, age) {
@@ -46,4 +46,4 @@ const huxn: User = {
   },
 };
 
-console.log(huxn.printUserInfo("HuXn", "WebDev", 18));
+console.log(safwan.printUserInfo("safwan", "WebDev", 18));
