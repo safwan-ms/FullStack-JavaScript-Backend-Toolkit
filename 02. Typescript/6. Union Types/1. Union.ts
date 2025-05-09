@@ -12,7 +12,7 @@ type AccountDetails = {
 };
 
 let user: UserInfo | AccountDetails = {
-  first: "HuXn",
+  first: "safwax",
   last: "WebDev",
   age: 29,
 };

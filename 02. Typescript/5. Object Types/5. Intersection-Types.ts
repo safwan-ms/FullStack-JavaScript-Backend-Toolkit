@@ -11,8 +11,8 @@ type AccountDetails = {
 
 type User = UserInfo & AccountDetails;
 
-const huxn: User = {
-  first: "HuXn",
+const safwax: User = {
+  first: "safwax",
   last: "WebDev",
   age: 18,
   email: "test@gmail.com",
@@ -20,5 +20,5 @@ const huxn: User = {
 };
 
 console.log(
-  `Name: (${huxn.first} ${huxn.last}) Age: (${huxn.age}) Email: (${huxn.email}) Password: (${huxn.password})`
+  `Name: (${safwax.first} ${safwax.last}) Age: (${safwax.age}) Email: (${safwax.email}) Password: (${safwax.password})`
 );

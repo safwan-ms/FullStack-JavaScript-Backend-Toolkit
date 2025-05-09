@@ -29,5 +29,5 @@ function printUserName(person: { firstName: string; lastName: string }) {
   console.log(`${person.firstName} ${person.lastName}`);
 }
 
-printUserName({ firstName: "HuXn", lastName: "WebDev" });
+printUserName({ firstName: "safwax", lastName: "WebDev" });
 // -------------------------

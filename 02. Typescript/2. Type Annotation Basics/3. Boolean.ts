@@ -3,4 +3,4 @@ console.log(tsHard);
 
 // ERROR
 // tsHard = 100;
-// tsHard = "HuXn";
+// tsHard = "safwax";

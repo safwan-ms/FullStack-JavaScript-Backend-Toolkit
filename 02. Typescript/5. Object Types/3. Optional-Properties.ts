@@ -5,7 +5,7 @@ type User = {
 };
 
 const user: User = {
-  name: "HuXn",
+  name: "safwax",
   age: 20,
   location: "Arabic",
 };
