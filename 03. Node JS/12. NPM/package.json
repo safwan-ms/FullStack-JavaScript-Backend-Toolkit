@@ -1,0 +1,18 @@
+{
+  "name": "safwax",
+  "version": "1.0.0",
+  "description": "my package",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "@safwax-webdev"
+  },
+  "author": "safwax WebDev",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
