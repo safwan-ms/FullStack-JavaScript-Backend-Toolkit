@@ -1,55 +1,57 @@
-// Every javascript object has a anonymous property called prototype
-// Remember functions & arrays are also a object
-// that prototype will be the parent of that object, prototype property is object by itself, which have some special properties & methods
+// Prototypal inheritance is a mechanism in JavaScript that allows objects to inherit properties and methods from other objects. It is a fundamental concept in the language and is based on the prototype model. In prototypal inheritance, objects can serve as prototypes for other objects, forming a hierarchical chain of inheritance.
 
-// Every object is associated with another object.
-// The object (a) is associated with [[Prototype]] Object
-// -> which means a object will inherit all properties of Object.prototype || [[Prototype]]
+// In JavaScript, every object has an internal property called [[Prototype]] (often referred to as __proto__), which points to its prototype object. When you access a property or method on an object, and that property or method is not found in the object itself, JavaScript looks for it in the object's prototype (and further up the prototype chain, if needed) until it finds the property or reaches the top of the prototype chain, which is usually the Object.prototype.
 
-// We can check the prototype of something in 3 ways:
-// --> obj.__proto__
-// --> obj.constructor.prototype
-// --> Object.getPrototypeOf(a)
-
-// ********* Checking the Prototype
-// const obj = {};
-// console.log(obj.__proto__.__proto__);
-
-// const arr = new Array();
-// console.log(arr.__proto__.__proto__.__proto__);
-
-// const str = new String();
-// console.log(str.__proto__.__proto__.__proto__);
-
-function Person(firstName, lastName, pl) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.pl = pl;
+// // Parent constructor function
+function Animal(name) {
+  this.name = name;
 }
 
-const huxn = new Person("HuXn", "WebDev", "JavaScript");
-console.log(huxn);
-console.log(huxn.__proto__);
-console.log(huxn.__proto__.__proto__);
-console.log(huxn.__proto__.__proto__.__proto__);
+// Adding a method to the prototype of Animal
+Animal.prototype.sound = function () {
+  return "Animal sound";
+};
 
-// -------------------------------
-// ********* Changing the Built-in Methods
-// console.log(Array.prototype);
-// Array.prototype.pop = function () {
-//   return "POP IT UP BABE";
+// Child constructor function inheriting from Animal
+function Dog(name, breed) {
+  Animal.call(this, name);
+  this.breed = breed;
+}
+
+// Set Dog's prototype to an instance of Animal to establish inheritance
+Dog.prototype = Object.create(Animal.prototype);
+
+// Adding a method specific to Dog's prototype
+Dog.prototype.bark = function () {
+  return "Woof!";
+};
+
+// Creating a Dog instance
+const dog1 = new Dog("Buddy", "Labrador");
+
+console.log(dog1.name); // Buddy
+console.log(dog1.sound()); // Animal sound
+console.log(dog1.breed); // Labrador
+console.log(dog1.bark()); // Woof!
+
+// --------------------------------------
+// Super Class
+// const Mobile = function () {
+//   this.a = 10;
 // };
 
-// const myArr = ["one", "two", "three"];
-// console.log(myArr.pop()); // POP IT UP BABE
-// -------------------------------
+// Mobile.prototype.z = 30;
 
-// -------------------------------
-// ********* We can define our own method as well
-// String.prototype.hello = function () {
-//   console.log(this);
-//   console.log(this.toUpperCase());
+// const Samsung = function () {
+//   Mobile.call(this);
+//   this.b = 20;
 // };
 
-// console.log("this is a string".hello()); // Uppercase : THIS IS A STRING
-// -------------------------------
+// // Prototype Inheritance
+// Samsung.prototype = Object.create(Mobile.prototype);
+// Samsung.prototype.constructor = Samsung;
+
+// const s = new Samsung();
+// console.log(s.a);
+// console.log(s.b);
+// console.log(s.z);
