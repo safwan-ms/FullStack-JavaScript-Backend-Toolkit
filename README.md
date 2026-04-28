@@ -7,10 +7,12 @@ A comprehensive learning repository covering the essentials and advanced topics 
 - **JavaScript (ES6+)** ✨
 - **TypeScript** 🟦
 - **Node.js** 🟩
+- **Node.js with TypeScript** 🟩🟦
 - **Express.js** 🚂
 - **MongoDB** 🍃
 - **Mongoose** 🦆
 - **Socket.IO** 📡
+- **Docker** 🐳
 - **EJS (Embedded JavaScript Templates)** 📝
 - **Other utilities:** dotenv, bcrypt, jsonwebtoken, multer, cloudinary, nodemon
 
@@ -94,6 +96,17 @@ A comprehensive learning repository covering the essentials and advanced topics 
     ├── Emitting Events/
     ├── Basic Chat App/
     └── React Chat App/
+
+09. NodeJS With Typescript/ 🟩🟦
+    ├── Setup/             ⚙️ tsconfig, package.json setup for Node + TS
+    ├── Express Basics/    🚂 Basic Express app and imports with types
+    ├── Interface Types/   🔷 Custom request interfaces, Mongoose interfaces
+    ├── Middleware/        🔗 Typed middleware patterns
+    ├── Error Handling/    🚨 Typed error handling
+    └── Request Response/  📨 Typed GET, POST routes and route parameters
+
+10. Docker/            🐳
+    └── Basics.md          📄 Core Docker concepts and commands
 ```
 
 ## ⚡ Installation
