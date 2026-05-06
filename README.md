@@ -106,7 +106,14 @@ A comprehensive learning repository covering the essentials and advanced topics 
     └── Request Response/  📨 Typed GET, POST routes and route parameters
 
 10. Docker/            🐳
-    └── Basics.md          📄 Core Docker concepts and commands
+    ├── Basics.md          📄 Core Docker concepts and commands
+    ├── Running Containers.md  🏃 Running and managing Docker containers
+    ├── Managing Containers.md  🎛️ Container lifecycle management
+    ├── Volumes.md         💾 Docker volumes and data persistence
+    ├── Networks.md        🌐 Docker networking concepts
+    ├── Dockerfile.md      🐳 Building custom Docker images
+    ├── Docker Compose.md  📦 Multi-container orchestration
+    └── Registry & Hub.md  🏭 Docker Hub and image registry
 ```
 
 ## ⚡ Installation
