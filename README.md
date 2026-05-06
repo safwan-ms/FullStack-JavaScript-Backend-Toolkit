@@ -110,7 +110,7 @@ A comprehensive learning repository covering the essentials and advanced topics 
     ├── Running Containers.md  🏃 Running and managing Docker containers
     ├── Managing Containers.md  🎛️ Container lifecycle management
     ├── Volumes.md         💾 Docker volumes and data persistence
-    ├── Networks.md        🌐 Docker networking concepts
+    ├── Networks.md        🌐 Docker networking concept
     ├── Dockerfile.md      🐳 Building custom Docker images
     ├── Docker Compose.md  📦 Multi-container orchestration
     └── Registry & Hub.md  🏭 Docker Hub and image registry
